@@ -34,13 +34,13 @@ def usage():
 
 
 
-def main(arg_lists):
+def main(arg_list):
 	
 	# get params if needed
 	# set all parameters according to command line
 	# --------------------------------------------
 	try:
-		opts, args = getopt.getopt(argv, "hd", ["help", "debug"])
+		opts, args = getopt.getopt(arg_list, "hd", ["help", "debug"])
 	except getopt.GetoptError as err:
 		log(err, "error")
 		usage()
